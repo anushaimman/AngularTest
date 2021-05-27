@@ -1,0 +1,49 @@
+<p>user-details-list works!</p>
+<table *ngIf="userdetails">
+    <tr>
+        <th>login</th>
+        <th>ID</th>
+        <th>Node_ID</th>
+        <th>Avatar_url</th>
+        <th>Gravatar_id</th>
+        <th>URL</th>
+
+        <th>html_url</th>
+        <th>followers_url</th>
+        <th>following_url</th>
+
+        <th>gists_url</th>
+        <th>starred_url</th>
+        <th>subscriptions_url</th>
+
+        <th>organizations_url</th>
+        <th>repos_url</th>
+        <th>events_url</th>
+
+        <th>received_events_url</th>
+        <th>type</th>
+        <th>site_admin</th>
+
+    </tr>
+<tr *ngFor="let user of userdetails">  
+<td>{{user.login}}</td>
+<td>{{user.id}}</td> 
+<td>{{user.node_id}}</td> 
+<td>{{user.avatar_url}}</td> 
+<td>{{user.gravatar_id}}</td> 
+<td>{{user.url}}</td> 
+<td>{{user.html_url}}</td> 
+<td>{{user.followers_url}}</td> 
+<td>{{user.following_url}}</td> 
+<td>{{user.gists_url}}</td> 
+<td>{{user.starred_url}}</td> 
+<td>{{user.subscriptions_url}}</td> 
+<td>{{user.organizations_url}}</td> 
+<td>{{user.repos_url}}</td> 
+<td>{{user.events_url}}</td> 
+
+<td>{{user.received_events_url}}</td> 
+<td>{{user.type}}</td> 
+<td>{{user.site_admin}}</td> 
+
+     </tr>      </table>
